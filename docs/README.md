@@ -1,15 +1,22 @@
-# 行政复议答复事项管理系统
+# Documentation Index
 
-## 项目目标
-- 本地保存、本地流转
-- 签收日期 + 10个工作日 自动计算最晚答复日
-- 自动预警、微信通知、统计分析
-- Windows 单机可交付
+## Core docs
+- `../README.md` — project overview, quick start, architecture
+- `USER_GUIDE.md` — end-user operation guide
+- `../PROJECT_ANALYSIS.md` — project analysis, scope, and boundaries
 
-## 目录
-- backend: FastAPI + SQLite + APScheduler + 微信自动化
-- frontend: Vue3 + Element Plus 多页面前端
-- installer: Inno Setup 安装脚本
-- scripts: Windows 启停与备份脚本
-- docs: 文档、部署说明、用户说明
-- tests: 测试预留
+## Runtime assumptions
+- Windows 10/11 is the primary target
+- Desktop WeChat automation is intended mainly for attended/manual use
+- `http://localhost:18080/` is the preferred frontend entry URL
+
+## Suggested documentation additions
+If the project continues to evolve, it would be useful to add:
+
+- deployment checklist
+- release notes / change log
+- data backup and restore guide
+- troubleshooting guide for:
+  - Python / venv path issues
+  - npm install issues on Windows
+  - WeChat automation focus issues
