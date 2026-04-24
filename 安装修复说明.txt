@@ -1,0 +1,15 @@
+ARLS Windows 最终完整修复版
+========================
+
+本包已合并本次排查确认可用的修复内容：
+1. 根目录【一键安装.bat】已替换为修复版，优先使用 npm@10 处理前端依赖
+2. 根目录【启动系统.bat】已替换为最终收口版，默认打开 http://localhost:18080/
+3. 额外附带 install_arls_safe_v2.cmd 与 启动系统_最终收口版.cmd 备用
+4. 已规避 bat/cmd 中文编码、label 跳转、npm11 Exit handler never called、直接调用 npm.cmd 导致脚本提前退出等问题
+
+推荐使用方式：
+A. 直接双击【一键安装.bat】完成安装
+B. 安装完成后双击【启动系统.bat】启动
+C. 浏览器统一访问：http://localhost:18080/
+
+如仍异常，请提供 logs\install.log 或 logs\start.log。
